@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+header h1
+{
+    margin: 3.5% 12.5%;
+    font-size: 36px;
+    color: #4E5150;
+    margin-bottom: 3rem;
+}
+main
+{
+    margin: 0 12.5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 8rem;
+}
+.part1 h2
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+.part1 .email .email-container, 
+.part1 .phone .phone-container,
+.part1 .name .name-container,
+.part1 .address .address-container,
+.part1 .city .city-container,
+.part1 .country .country-container,
+.part1 .postal .postal-container
+{
+    display: flex;
+    width: 100%;
+    border: 1px solid #828282;
+    padding: 1rem 1rem;
+    border-radius: 12px;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.part1 .phone
+{
+    margin-bottom: 3rem;
+}
+.part1 .email h3,
+.part1 .phone h3,
+.part1 .name h3,
+.part1 .address h3,
+.part1 .city h3,
+.part1 .country h3,
+.part1 .postal h3
+{
+    font-size: 12px;
+    color: #4F4F4F;
+    font-weight: 600;
+    margin-bottom: .2rem;
+}
+.part1 .email .email-container i,
+.part1 .phone .phone-container i,
+.part1 .name .name-container i,
+.part1 .address .address-container i,
+.part1 .city .city-container i,
+.part1 .country .country-container i,
+.part1 .postal .postal-container i
+{
+    color: #828282;
+}
+.part1 .postal .postal-container i
+{
+    width: 20px;
+    height: 20px;
+}
+.part1 .email .email-container .input-field,
+.part1 .phone .phone-container .input-field,
+.part1 .name .name-container .input-field,
+.part1 .address .address-container .input-field,
+.part1 .city .city-container .input-field,
+.part1 .country .country-container .input-field,
+.part1 .postal .postal-container .input-field
+{
+    outline: none;
+    border: none;
+    color: #828282;
+    font-size: 16px;
+    font-weight: 600;
+}
+.part1 .name .name-container .input-field
+{
+    color: #333333;
+}
+.last
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.part1 .check-box
+{
+    display: flex;
+    align-items: center;
+}
+.part1 .check-box .input
+{
+    outline: none;
+    border: none;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 0.6rem;
+}
+.part1 .check-box p
+{
+    font-size: 12px;
+    font-weight: 600;
+    color: #4F4F4F;
+}
+.part1 .button
+{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.part1 .button .btn
+{
+    border-radius: 12px;
+    background: #F2994A;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.part2
+{
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+}
+.part2-container
+{
+    margin: 2rem 1rem 1rem 1rem;
+}
+.part2 .item1, .part2 .item2
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 2rem;
+}
+.part2 .item1 img,.part2 .item2 img
+{
+    width: 80%;
+    transform: rotate(-0.02deg);
+    border-radius: 12px;
+}
+.part2 .item1 .details .item-name, .part2 .item2 .details .item-name
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: #4E5150;
+}
+.part2 .item1 .details .price, .part2 .item2 .details .price
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.1rem;
+    align-items: center;
+    gap: 1rem;
+}
+.part2 .item1 .details .price .offer-price, .part2 .item2 .details .price .offer-price
+{
+    font-size: 16px;
+    color: #F2994A;
+    font-weight: 600;
+}
+.part2 .item1 .details .price .org-price, .part2 .item2 .details .price .org-price
+{
+    font-size: 12px;
+    color: #4E5150;
+    text-decoration: line-through;
+    font-weight: 600;
+}
+.part2 .quantity
+{
+    margin-top: 2rem;
+    width: 80%;
+    border: 1px solid #828282;
+    border-radius: 12px;
+}
+.part2 .quantity .quantity-container
+{
+    display: flex;
+    padding: 1rem;
+}
+.part2 .quantity .quantity-container i
+{
+    background-color: #E0E0E0;
+    padding: 0.2rem;
+    color: #828282;
+}
+.part2 .quantity .quantity-container .input-field
+{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 80%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #333333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hr
+{
+    border: 1px solid #BDBDBD;
+    transform: rotate(-0.18deg);
+}
+.part2-container .shipping, .part2-container .total
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 1rem 0;
+}
+.part2-container .shipping .shipping-text, .part2-container .total .total-text
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+.part2-container .shipping .amount, .part2-container .total .amount
+{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+}
+footer
+{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+footer a
+{
+    padding-left: 0.3rem;
+    color: #BDBDBD;
+    font-weight: 700;
+}
+@media (max-width:1000px)
+{
+    body
+    {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    header,main
+    {
+        margin-left: 1rem;
+    }
+    header h1
+    {
+        margin-left: 0.5rem;
+    }
+    main
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    main > div:nth-of-type(1)
+    {
+        order: 2;
+    }
+    main > div:nth-of-type(2)
+    {
+        order: 1;
+    }
+    main .part1
+    {
+        width: 100vw;
+    }
+    .part1 .email .email-container, 
+    .part1 .phone .phone-container,
+    .part1 .name .name-container,
+    .part1 .address .address-container,
+    .part1 .city .city-container
+    {
+        display: flex;
+        width: 85%;
+        border: 1px solid #828282;
+        padding: 1rem 1rem;
+        border-radius: 12px;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .part1 .country .country-container,
+    .part1 .postal .postal-container
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* width: 50%; */
+        border: 1px solid #828282;
+        /* padding: 1rem 1rem; */
+        border-radius: 12px;
+        /* gap: 1rem; */
+        margin-bottom: 1rem;
+    }
+    .part1 .phone
+    {
+        margin-bottom: 3rem;
+    }
+    .part1 .email h3,
+    .part1 .phone h3,
+    .part1 .name h3,
+    .part1 .address h3,
+    .part1 .city h3,
+    .part1 .country h3,
+    .part1 .postal h3
+    {
+        font-size: 10px;
+        color: #4F4F4F;
+        font-weight: 600;
+        margin-bottom: .2rem;
+    }
+    .part1 .email .email-container i,
+    .part1 .phone .phone-container i,
+    .part1 .name .name-container i,
+    .part1 .address .address-container i,
+    .part1 .city .city-container i,
+    .part1 .country .country-container i,
+    .part1 .postal .postal-container i
+    {
+        color: #828282;
+    }
+    .part1 .postal .postal-container i
+    {
+        width: 20px;
+        height: 20px;
+    }
+    .part1 .email .email-container .input-field,
+    .part1 .phone .phone-container .input-field,
+    .part1 .name .name-container .input-field,
+    .part1 .address .address-container .input-field,
+    .part1 .city .city-container .input-field,
+    .part1 .country .country-container .input-field,
+    .part1 .postal .postal-container .input-field
+    {
+        outline: none;
+        border: none;
+        color: #828282;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .last
+    {
+        width: 80vw;
+        grid-template-columns: 50% 50%;
+        gap: -1rem;
+        grid-gap: 1rem;
+    }
+    .button
+    {
+        width: 85%;
+    }
+    .part2
+    {
+        height: 100%;
+        width: 85%;
+    }
+    .part2 .quantity
+    {
+        margin-top: 2rem;
+        width: 80%;
+        border: 1px solid #828282;
+        border-radius: 12px;
+    }
+    .part2 .quantity .quantity-container
+    {
+        display: flex;
+        padding: 1rem;
+    }
+    .part2 .quantity .quantity-container i
+    {
+        background-color: #E0E0E0;
+        padding: 0.2rem;
+        color: #828282;
+    }
+    .part2 .quantity .quantity-container .input-field
+    {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 80%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color: #333333;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
